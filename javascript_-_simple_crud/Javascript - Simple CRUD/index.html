@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	</head>
+<body>
+	<h1>Simple Crud Displaying Customers details</h1>
+	<br>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="col-10 mb-3"><br>
+                <label for="loginId">Login Id</label>
+                <input class="form-control" id="loginId" type="text" placeholder="login Id">
+            </div><br>
+            <div class="col-10 mb-3">
+                <label for="password">password</label>
+                <input class="form-control" id="password" type="number" placeholder="password">
+            </div><br>
+            <div class="col-10">
+            <input class="btn btn-success add-btn" type="submit" value="Submit">
+        </div><br>
+		</div>
+	</nav><br>
+	<div class="col-md-2"></div>
+	<div class="col-md-8 well">
+		<h3 class="text-primary">Javascript - Simple CRUD</h3>
+		<hr style="border-top:1px dotted #ccc;"/>
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<form action="javascript:void(0);" method="POST" class="form-inline" onsubmit="Add()">
+				<label>Name:</label>
+				<input type="text" id="name" class="form-control"/>
+				<button type="submit" class="btn btn-primary form-control"><span class="glyphicon glyphicon-plus"></span> Add</button>
+			</form>
+			<br />
+			<div id="edit">	
+				<form action="javascript:void(0);" method="POST" class="form-inline" id="update">
+					<label>Name:</label>
+					<input type="text" id="edit_name" class="form-control"/>
+					<button type="submit" class="btn btn-warning form-control"><span class="glyphicon glyphicon-update"></span> Update</button> <a class="btn btn-danger" onclick="Close()" aria-label="Close">&#10006;</a>
+				</form>
+			</div>
+			<br />
+			<table class="table table-bordered">
+				<thead>	
+					<tr>
+						<th>Firs Name</th>
+						<th>Last Name</th>
+						<th>Address</th>
+						<th>Email Id</th>
+						<th>Phone</th>
+					</tr>
+				</thead>
+				<tbody id="name_list">
+				
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<form>
+	<div class="col-md-3"></div>
+	<div class="col-md-12 well">
+	<h1> Customers details</h1>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="col-10 mb-3"><br>
+                <label for="firstName">First Name</label>
+                <input class="form-control" id="loginId" type="text" placeholder="First Name">
+            </div><br>
+            <div class="col-10 mb-3">
+                <label for="LastName">Last Name</label>
+                <input class="form-control" id="text" type="text" placeholder="Last Name">
+            </div><br>
+            <div class="col-10 mb-3">
+                <label for="address">Address</label>
+                <input class="form-control" id="text" type="text" placeholder="Address">
+            </div><br>
+			<div class="col-10 mb-3">
+                <label for="emalId">email Id</label>
+                <input class="form-control" id="text" type="text" placeholder="Email Id">
+            </div><br>
+			<div class="col-10 mb-3">
+                <label for="phoneNumber">Phone Number</label>
+                <input class="form-control" id="number" type="number" placeholder="Phone Number">
+            </div><br>
+
+		</form>
+		</div>
+		<button type="submit" data-mobilelabel="ok"><span style="background-color: rgb(251, 255, 0);">Submit</span></button>
+
+	
+</body>
+<script src="js/script.js"></script>
+</html>
